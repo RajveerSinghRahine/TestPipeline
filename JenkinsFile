@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Building...') {
             steps {
-                echo 'Building...'
+                git branch: "main", credentialsId: "Rajveer's GitHub Creds", url: "https://github.com/RajveerSinghRahine/PetFinder.git"
             }
         }
         stage('Deploying...') {
